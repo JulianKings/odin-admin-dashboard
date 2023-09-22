@@ -14,6 +14,13 @@ const notificationBox = document.querySelector('.notification-box');
 let notificationShown = false;
 const exitNotification = document.querySelector('.exit-notification');
 
+// events
+const todayBox = document.querySelector('.section-events-today');
+const todayDate = (new Date());
+
+// update date
+todayBox.textContent = `${todayDate.getHours()}:${todayDate.getMinutes()} ${todayDate.getUTCDate()}/${1+todayDate.getMonth()}/${todayDate.getFullYear()}`;
+
 
 // reposition checks
 if(notificationShown)
