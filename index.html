@@ -33,18 +33,26 @@
         <div class="section-header">
             <div class="search-input">
                 <form action="" method="get">
-                    <input type="text" id="searchBar" name="user_search" placeholder="Enter your search input..." />
+                    <input type="text" id="searchBar" name="user_search" list="suggestedProjects" placeholder="Enter your search input..." />
                     <img src="image/search.svg" />
+                    <datalist id="suggestedProjects">
+                        <option value="Calculator">JavaScript and DOM practice</option>
+                        <option value="Sign Up Form">Advanced HTML practice</option>
+                        <option value="Admin Dashboard">CSS Grid practice</option>
+                        <option value="Etch-a-Sketch">JavaScript and DOM practice</option>
+                        <option value="Rock, Paper, Scissors">JavaScript practice</option>
+                        <option value="Landing Page">Flexbox Practice</option>
+                    </datalist>
                 </form>
             </div>
             <div class="empty-space"></div>
             <div class="empty-space"></div>
-            <div class="language-selector">EN<img src="image/down.svg" /></div>
+            <div class="language-selector">EN<img src="image/chevron-down.svg" /></div>
             <div class="notification-bell">
                 <img src="image/bell.svg" />
                 <div class="notification-count">6</div>
             </div>
-            <div class="nightmode"><img src="image/moon.svg" /></div>
+            <div class="night-mode"><img src="image/moon.svg" /></div>
             <div class="profile-picture"><img src="image/cat.png" /></div>
             <div class="empty-space"></div>
         </div>
@@ -75,9 +83,23 @@
                             <span>This calculator was made in JavaScript as a project to consolidate my learnings on JavaScript for The Odin Project.</span>
                         </div>
                         <div class="section-content-card-icons">
-                            <a href="#"><img src="image/star-outline.svg" /></a>
-                            <a href="#"><img src="image/bookmarks-outline.svg" /></a>
-                            <a href="#"><img src="image/share-social-outline.svg" /></a>
+                            <a href="#"><img src="image/star.svg" /></a>
+                            <a href="#"><img src="image/bookmark.svg" /></a>
+                            <a href="#"><img src="image/share.svg" /></a>
+                        </div>
+                    </div>
+                    <div class="section-content-card">
+                        <div class="section-content-card-image">
+                            <img src="image/admin.png" />
+                        </div>
+                        <div class="section-content-card-desc">
+                            <strong><a href="https://juliankings.github.io/odin-admin-dashboard/">Admin Dashboard</a></strong><br />
+                            <span>This Admin Dashboard was made in HTML as a project to consolidate my learnings on CSS Grid for The Odin Project.</span>
+                        </div>
+                        <div class="section-content-card-icons">
+                            <a href="#"><img src="image/star.svg" /></a>
+                            <a href="#"><img src="image/bookmark.svg" /></a>
+                            <a href="#"><img src="image/share.svg" /></a>
                         </div>
                     </div>
                     <div class="section-content-card">
@@ -89,9 +111,9 @@
                             <span>This sign up form was made in HTML/JavaScript as a project to consolidate my learnings on forms and advanced HTML for The Odin Project.</span>
                         </div>
                         <div class="section-content-card-icons">
-                            <a href="#"><img src="image/star-outline.svg" /></a>
-                            <a href="#"><img src="image/bookmarks-outline.svg" /></a>
-                            <a href="#"><img src="image/share-social-outline.svg" /></a>
+                            <a href="#"><img src="image/star.svg" /></a>
+                            <a href="#"><img src="image/bookmark.svg" /></a>
+                            <a href="#"><img src="image/share.svg" /></a>
                         </div>
                     </div>
                     <div class="section-content-card">
@@ -103,9 +125,9 @@
                             <span>This Etch-a-Sketch game was made in JavaScript as a project to consolidate my learnings about the DOM for The Odin Project.</span>
                         </div>
                         <div class="section-content-card-icons">
-                            <a href="#"><img src="image/star-outline.svg" /></a>
-                            <a href="#"><img src="image/bookmarks-outline.svg" /></a>
-                            <a href="#"><img src="image/share-social-outline.svg" /></a>
+                            <a href="#"><img src="image/star.svg" /></a>
+                            <a href="#"><img src="image/bookmark.svg" /></a>
+                            <a href="#"><img src="image/share.svg" /></a>
                         </div>
                     </div>
                     <div class="section-content-card">
@@ -117,9 +139,9 @@
                             <span>This game was made in JavaScript as a project to practice JavaScript for The Odin Project.</span>
                         </div>
                         <div class="section-content-card-icons">
-                            <a href="#"><img src="image/star-outline.svg" /></a>
-                            <a href="#"><img src="image/bookmarks-outline.svg" /></a>
-                            <a href="#"><img src="image/share-social-outline.svg" /></a>
+                            <a href="#"><img src="image/star.svg" /></a>
+                            <a href="#"><img src="image/bookmark.svg" /></a>
+                            <a href="#"><img src="image/share.svg" /></a>
                         </div>
                     </div>
                     <div class="section-content-card">
@@ -131,9 +153,9 @@
                             <span>This site was made in HTML as a project to consolidate my learnings about Flexbox for The Odin Project.</span>
                         </div>
                         <div class="section-content-card-icons">
-                            <a href="#"><img src="image/star-outline.svg" /></a>
-                            <a href="#"><img src="image/bookmarks-outline.svg" /></a>
-                            <a href="#"><img src="image/share-social-outline.svg" /></a>
+                            <a href="#"><img src="image/star.svg" /></a>
+                            <a href="#"><img src="image/bookmark.svg" /></a>
+                            <a href="#"><img src="image/share.svg" /></a>
                         </div>
                     </div>
                 </div>
@@ -188,6 +210,33 @@
         </div>
         <div class="section-footer">This Admin Dashboard was made for The Odin Project</div>
     </div>
-    
+
+    <div class="notification-box">
+        <div class="notification">
+            <div class="notification-icon"><img src="image/alert-triangle.svg" /></div>
+            <div class="notification-text">You forgot to tie your shoes!</div>
+        </div>
+        <div class="notification">
+            <div class="notification-icon"><img src="image/alert-circle.svg" /></div>
+            <div class="notification-text">Your project <strong>Calculator</strong> has been reported.</div>
+        </div>
+        <div class="notification">
+            <div class="notification-icon"><img src="image/alert-triangle.svg" /></div>
+            <div class="notification-text">Your project <strong>Admin Dashboard</strong> has been deleted.</div>
+        </div>
+        <div class="notification">
+            <div class="notification-icon"><img src="image/alert-circle.svg" /></div>
+            <div class="notification-text">You have <strong>6</strong> new comments on your projects.</div>
+        </div>
+        <div class="notification">
+            <div class="notification-icon"><img src="image/alert-circle.svg" /></div>
+            <div class="notification-text">You have <strong>3013</strong> new issues in your projects.</div>
+        </div>
+        <div class="notification">
+            <div class="notification-icon"><img src="image/check-green.svg" /></div>
+            <div class="notification-text">You have been promoted to <strong>Administrator</strong>.</div>
+        </div>
+        <div class="exit-notification"><img src="image/x.svg" /></div>
+    </div>    
 </body>
 </html>
