@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="image/coffee.svg" type="image/x-icon">
+    <script type="text/javascript" src="scripts/global.js" defer></script>
+    <title>Odin's Admin Dashboard</title>
+</head>
+<body>
+    <div class="content">
+        <div class="menu">
+            <div class="title"><img src="image/coffee.svg" /> <span>Dashboard</span></div>
+            <div class="navigation">
+                <ul>
+                    <li class="selected"><img src="image/home.svg" /><span>Home</span></li>
+                    <li><img src="image/user.svg" /><span>Profile</span</li>
+                    <li><img src="image/message-square.svg" /><span>Messages</span</li>
+                    <li><img src="image/archive.svg" /><span>History</span</li>
+                    <li><img src="image/layers.svg" /><span>Tasks</span</li>
+                    <li><img src="image/smile.svg" /><span>Communities</span</li>
+                </ul>
+            </div>
+            <div class="settings">
+                <ul>
+                    <li><img src="image/settings.svg" /><span>Settings</span></li>
+                    <li><img src="image/help-circle.svg" /><span>Support</span></li>
+                    <li><img src="image/briefcase.svg" /><span>Privacy</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-header">
+            <div class="search-input">
+                <form action="" method="get">
+                    <input type="text" id="searchBar" name="user_search" list="suggestedProjects" placeholder="Enter your search input..." />
+                    <img src="image/search.svg" />
+                    <datalist id="suggestedProjects">
+                        <option value="Calculator">JavaScript and DOM practice</option>
+                        <option value="Sign Up Form">Advanced HTML practice</option>
+                        <option value="Admin Dashboard">CSS Grid practice</option>
+                        <option value="Etch-a-Sketch">JavaScript and DOM practice</option>
+                        <option value="Rock, Paper, Scissors">JavaScript practice</option>
+                        <option value="Landing Page">Flexbox Practice</option>
+                    </datalist>
+                </form>
+            </div>
+            <div class="empty-space"></div>
+            <div class="empty-space"></div>
+            <div class="language-selector">EN<img src="image/chevron-down.svg" /></div>
+            <div class="notification-bell">
+                <img src="image/bell.svg" />
+                <div class="notification-count">6</div>
+            </div>
+            <div class="night-mode"><img src="image/moon.svg" /></div>
+            <div class="profile-picture"><img src="image/cat.png" /></div>
+            <div class="empty-space"></div>
+        </div>
+        <div class="section-user">
+            <div class="user-container">
+                <div class="user-image"><img src="image/cat.png" /></div>
+                <div class="user-name">
+                    <p>Hi there, <br />
+                    <span class="user-name-decoration">Cat King (@CatKing)</span></p>
+                </div>
+            </div>
+            <div class="user-menus">
+                <div class="user-menu">New</div>
+                <div class="user-menu">Upload</div>
+                <div class="user-menu">Share</div>
+            </div>            
+        </div>
+        <div class="section-content">
+            <div class="section-projects">
+                <p class="section-content-box-title">Projects</p>
+                <div class="section-content-holder">
+                    <div class="section-content-card">
+                        <div class="section-content-card-image">
+                            <img src="image/calc.png" />
+                        </div>
+                        <div class="section-content-card-desc">
+                            <strong><a href="https://juliankings.github.io/odin-calculator/">Calculator</a></strong><br />
+                            <span>This calculator was made in JavaScript as a project to consolidate my learnings on JavaScript for The Odin Project.</span>
+                        </div>
+                        <div class="section-content-card-icons">
+                            <a href="#"><img src="image/star.svg" /></a>
+                            <a href="#"><img src="image/bookmark.svg" /></a>
+                            <a href="#"><img src="image/share.svg" /></a>
+                        </div>
+                    </div>
+                    <div class="section-content-card">
+                        <div class="section-content-card-image">
+                            <img src="image/admin.png" />
+                        </div>
+                        <div class="section-content-card-desc">
+                            <strong><a href="https://juliankings.github.io/odin-admin-dashboard/">Admin Dashboard</a></strong><br />
+                            <span>This Admin Dashboard was made in HTML as a project to consolidate my learnings on CSS Grid for The Odin Project.</span>
+                        </div>
+                        <div class="section-content-card-icons">
+                            <a href="#"><img src="image/star.svg" /></a>
+                            <a href="#"><img src="image/bookmark.svg" /></a>
+                            <a href="#"><img src="image/share.svg" /></a>
+                        </div>
+                    </div>
+                    <div class="section-content-card">
+                        <div class="section-content-card-image">
+                            <img src="image/form.png" />
+                        </div>
+                        <div class="section-content-card-desc">
+                            <strong><a href="https://juliankings.github.io/odin-signup-form/">Sign Up Form</a></strong><br />
+                            <span>This sign up form was made in HTML/JavaScript as a project to consolidate my learnings on forms and advanced HTML for The Odin Project.</span>
+                        </div>
+                        <div class="section-content-card-icons">
+                            <a href="#"><img src="image/star.svg" /></a>
+                            <a href="#"><img src="image/bookmark.svg" /></a>
+                            <a href="#"><img src="image/share.svg" /></a>
+                        </div>
+                    </div>
+                    <div class="section-content-card">
+                        <div class="section-content-card-image">
+                            <img src="image/etch.png" />
+                        </div>
+                        <div class="section-content-card-desc">
+                            <strong><a href="https://juliankings.github.io/odin-etch-a-sketch/">Etch-a-Sketch</a></strong><br />
+                            <span>This Etch-a-Sketch game was made in JavaScript as a project to consolidate my learnings about the DOM for The Odin Project.</span>
+                        </div>
+                        <div class="section-content-card-icons">
+                            <a href="#"><img src="image/star.svg" /></a>
+                            <a href="#"><img src="image/bookmark.svg" /></a>
+                            <a href="#"><img src="image/share.svg" /></a>
+                        </div>
+                    </div>
+                    <div class="section-content-card">
+                        <div class="section-content-card-image">
+                            <img src="image/rockpaper.png" />
+                        </div>
+                        <div class="section-content-card-desc">
+                            <strong><a href="https://juliankings.github.io/odin-rockpaperscissors/">Rock, Paper, Scissors</a></strong><br />
+                            <span>This game was made in JavaScript as a project to practice JavaScript for The Odin Project.</span>
+                        </div>
+                        <div class="section-content-card-icons">
+                            <a href="#"><img src="image/star.svg" /></a>
+                            <a href="#"><img src="image/bookmark.svg" /></a>
+                            <a href="#"><img src="image/share.svg" /></a>
+                        </div>
+                    </div>
+                    <div class="section-content-card">
+                        <div class="section-content-card-image">
+                            <img src="image/landing.png" />
+                        </div>
+                        <div class="section-content-card-desc">
+                            <strong><a href="https://juliankings.github.io/odin-landing-page/">Landing Page</a></strong><br />
+                            <span>This site was made in HTML as a project to consolidate my learnings about Flexbox for The Odin Project.</span>
+                        </div>
+                        <div class="section-content-card-icons">
+                            <a href="#"><img src="image/star.svg" /></a>
+                            <a href="#"><img src="image/bookmark.svg" /></a>
+                            <a href="#"><img src="image/share.svg" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-extra">
+                <div class="section-announcements">
+                    <p class="section-content-box-title">Announcements</p>
+                    <div class="section-content-box">
+                        <p><strong><a href="#">Site Maintenance</a></strong><br />
+                        <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia odio accusamus earum sapiente repellendus eaque...</span></p>
+                        <hr>
+                        <p><strong><a href="#">Community Share Day</a></strong><br />
+                        <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia odio accusamus earum sapiente repellendus eaque...</span></p>
+                        <hr>
+                        <p><strong><a href="#">Updated Privacy Policy</a></strong><br />
+                        <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia odio accusamus earum sapiente repellendus eaque...</span></p>
+                    </div>
+                </div>
+                <div class="section-trending">
+                    <p class="section-content-box-title">Trending</p>
+                    <div class="section-content-box">
+                        <div class="section-trending-image">
+                            <img src="image/cat.png" />
+                        </div>
+                        <div class="section-trending-user">
+                            <a href="#">Cat King</a><br />
+                            <span>@Catking</span>
+                        </div>
+                        <div class="section-trending-image">
+                            <img src="image/cute-cat.jpg" />
+                        </div>
+                        <div class="section-trending-user">
+                            <a href="#">Cute Cat</a><br />
+                            <span>@Imthecutest</span>
+                        </div>
+                        <div class="section-trending-image">
+                            <img src="image/hit-cat.jpg" />
+                        </div>
+                        <div class="section-trending-user">
+                            <a href="#">Aggressive Cat</a><br />
+                            <span>@Donthitmykitten</span>
+                        </div>
+                        <div class="section-trending-image">
+                            <img src="image/watch-cat.jpg" />
+                        </div>
+                        <div class="section-trending-user">
+                            <a href="#">Watcher Cat</a><br />
+                            <span>@Allseeingcat</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-events">
+                <p class="section-content-box-title">Upcoming Events</p>
+                <div class="section-events-today"></div>
+                <div class="calendar-holder">
+                    <div class="date">
+                        <div class="date-day-name">Thu</div>
+                        <div class="date-day-number">21</div>
+                    </div>
+                    <div class="date selected">
+                        <div class="date-day-name">Fri</div>
+                        <div class="date-day-number">22</div>
+                    </div>
+                    <div class="date">
+                        <div class="date-day-name">Sat</div>
+                        <div class="date-day-number">23</div>
+                    </div>
+                    <div class="date">
+                        <div class="date-day-name">Sun</div>
+                        <div class="date-day-number">24</div>
+                    </div>
+                    <div class="date">
+                        <div class="date-day-name">Mon</div>
+                        <div class="date-day-number">25</div>
+                    </div>
+                    <div class="date">
+                        <div class="date-day-name">Tue</div>
+                        <div class="date-day-number">26</div>
+                    </div>
+                    <div class="date">
+                        <div class="date-day-name">Wed</div>
+                        <div class="date-day-number">27</div>
+                    </div>
+                    <div class="date">
+                        <div class="date-day-name">Thu</div>
+                        <div class="date-day-number">28</div>
+                    </div>
+                    <div class="date">
+                        <div class="date-day-name">Fri</div>
+                        <div class="date-day-number">29</div>
+                    </div>
+                    <div class="date">
+                        <div class="date-day-name">Sat</div>
+                        <div class="date-day-number">30</div>
+                    </div>
+                    <div class="date">
+                        <div class="date-day-name">Sun</div>
+                        <div class="date-day-number">1</div>
+                    </div>
+                    <div class="date">
+                        <div class="date-day-name">Mon</div>
+                        <div class="date-day-number">2</div>
+                    </div>
+                    <div class="date selected">
+                        <div class="date-day-name">Tue</div>
+                        <div class="date-day-number">3</div>
+                    </div>
+                    <div class="date">
+                        <div class="date-day-name">Wed</div>
+                        <div class="date-day-number">4</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-footer">This Admin Dashboard was made for The Odin Project</div>
+    </div>
+
+    <div class="notification-box">
+        <div class="notification">
+            <div class="notification-icon"><img src="image/alert-triangle.svg" /></div>
+            <div class="notification-text">You forgot to tie your shoes!</div>
+        </div>
+        <div class="notification">
+            <div class="notification-icon"><img src="image/alert-circle.svg" /></div>
+            <div class="notification-text">Your project <strong>Calculator</strong> has been reported.</div>
+        </div>
+        <div class="notification">
+            <div class="notification-icon"><img src="image/alert-triangle.svg" /></div>
+            <div class="notification-text">Your project <strong>Admin Dashboard</strong> has been deleted.</div>
+        </div>
+        <div class="notification">
+            <div class="notification-icon"><img src="image/alert-circle.svg" /></div>
+            <div class="notification-text">You have <strong>6</strong> new comments on your projects.</div>
+        </div>
+        <div class="notification">
+            <div class="notification-icon"><img src="image/alert-circle.svg" /></div>
+            <div class="notification-text">You have <strong>3013</strong> new issues in your projects.</div>
+        </div>
+        <div class="notification">
+            <div class="notification-icon"><img src="image/check-green.svg" /></div>
+            <div class="notification-text">You have been promoted to <strong>Administrator</strong>.</div>
+        </div>
+        <div class="exit-notification"><img src="image/x.svg" /></div>
+    </div>
+
+    <div class="media-menu-button"><img src="image/coffee.svg" /></div>
+    
+    <div class="media-menu">
+        <div class="navigation">
+            <ul>
+                <li class="selected"><img src="image/home.svg" /><span>Home</span></li>
+                <li><img src="image/user.svg" /><span>Profile</span</li>
+                <li><img src="image/message-square.svg" /><span>Messages</span</li>
+                <li><img src="image/archive.svg" /><span>History</span</li>
+                <li><img src="image/layers.svg" /><span>Tasks</span</li>
+                <li><img src="image/smile.svg" /><span>Communities</span</li>
+            </ul>
+        </div>
+        <div class="settings">
+            <ul>
+                <li><img src="image/settings.svg" /><span>Settings</span></li>
+                <li><img src="image/help-circle.svg" /><span>Support</span></li>
+                <li><img src="image/briefcase.svg" /><span>Privacy</span></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

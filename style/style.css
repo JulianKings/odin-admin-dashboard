@@ -1,0 +1,577 @@
+:root {
+    --background-color: #e5e7eb;
+    --text-color: black;
+    --background-white: white;
+    --text-a-hover-color: #2b2828;
+    --text-span-color: #615c5c;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+}
+
+.content {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    width: 100%;
+    overflow: auto;
+    height: 100%;
+    display: grid;
+    grid: 3.5rem 5.5rem 1fr 2.5rem / 20% 1fr;
+}
+
+.menu {
+    grid-area: 1 / 1 / 5 / 2;
+    background-color: #1d2636;
+    color: #fafcff;
+}
+
+.menu .title {
+    padding-left: 0.8rem;
+    padding-top: 1rem;
+    font-size: 1.8rem;
+    display:flex;
+    align-content: center;
+    gap: 0.4rem;
+}
+
+.menu .title img {
+    display: inline-block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-rows: repeat(6, 2.2rem);
+    padding-left: 0;
+}
+
+.settings ul
+{
+    list-style-type: none;
+    display: grid;
+    grid-template-rows: repeat(3, 2.2rem);
+    padding-left: 0;
+}
+
+.navigation ul li, .settings ul li {
+    margin-left: 0;
+    display:flex;
+    align-content: center;
+    gap: 0.8rem;
+    padding: 0.5rem 1rem;
+    padding-left: 0.4rem;
+    position: relative;
+    transition: all .2s ease-in-out;
+}
+
+.navigation ul li:hover, .settings ul li:hover {
+    background-color: #141920;
+    padding-left: 8%;
+    transform: scale(1.1);
+}
+
+.navigation ul li:active, .settings ul li:active {
+    background-color: #132544;
+    padding-left: 9%;
+    transform: scale(1.13);
+}
+
+.navigation ul .selected, .settings ul .selected {
+    padding-left: 6%;
+    background-color: #141920;
+    transform: scale(1.05);
+}
+
+.section-header {
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: var(--background-white);
+    display: grid;
+    grid-template-columns: 70% repeat(6, 2.5rem) 2rem;
+    justify-content: end;
+    clip-path: inset(0px -10px -10px -10px);
+    transition: all 0.5s ease-in-out;
+}
+
+.section-header .search-input {
+    padding-left: 3rem;
+    padding-top: 1.5rem;
+    padding-right: 5.5rem;
+    position: relative;
+}
+
+.section-header .search-input input {
+    padding: 0.4rem;
+    padding-left: 0.8rem;
+    padding-right: 2rem;
+    width: 100%;
+    max-width: 100%;
+    background-color: #e5e7eb;
+    color: #726b6b;
+    border: 0px;
+    border-radius: 10px;
+}
+
+.section-header .search-input img {
+    display: inline;
+    position: absolute;
+    right: 3.3rem;
+    top: 1.75rem;
+    height: 20px;
+    width: 20px;
+}
+
+.section-header .search-input input:focus {
+    outline: none;
+}
+
+.section-header .language-selector
+{
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    padding-right: 1rem;
+    transition: all 0 ease-in-out;
+}
+
+.section-header .language-selector img {
+    display: inline;
+    height: 22px;
+    width: 22px;
+}
+
+.section-header .notification-bell {
+    padding-top: 1.5rem;
+    padding-left: 0.4rem;
+    position: relative;
+}
+
+.section-header .notification-count {
+    background-color: orange;
+    position: absolute;
+    color: #141920;
+    border-radius: 50%;
+    font-size: 0.7rem;
+    width: 13px;
+    height: 13px;
+    text-align: center;
+    right: 0.5rem;
+    bottom: 0.65rem;
+    opacity: 0.8;
+}
+
+.section-header .night-mode {
+    padding-top: 1.5rem;
+}
+
+.section-header .profile-picture {
+    padding-top: 1rem;
+    padding-right: 2rem;
+}
+
+.section-header .profile-picture img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.section-user {
+    grid-area: 2 / 2 / 3 / 3;
+    background-color: var(--background-white);
+    box-shadow: 0px 0.1rem 10px rgb(0, 0, 0, 0.4);
+    display: grid;
+    align-items: end;
+    grid-template-columns: 65% 1fr;
+    transition: all 0.5s ease-in-out;
+}
+
+.section-user .user-container {
+    padding-left: 1.5rem;
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    padding-bottom: 0.3rem;
+}
+
+.section-user .user-container .user-image img {
+    display: inline;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.section-user .user-menus {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(1rem, 1fr));
+    justify-items: space-evenly;
+    padding-right: 1rem;
+    padding-bottom: 1.5rem;
+    gap: 1.5rem;
+}
+
+.section-user .user-menus .user-menu {
+    background-color: #1d2636;
+    color: #e5e7eb;
+    border-radius: 0.8rem;
+    text-align: center;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    transition: all .2s ease-in-out;
+}
+
+.section-user .user-menus .user-menu:hover {
+    background-color: #141920;
+    transform: scale(1.1);
+}
+
+.section-user .user-menus .user-menu:active {
+    background-color: #132544;
+    transform: scale(1.2);
+}
+
+.section-user .user-container .user-name {    
+    padding-left: 0.6rem;
+}
+
+.section-user .user-container .user-name .user-name-decoration {    
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.section-content {
+    grid-area: 3 / 2 / 4 / 3;
+    display: grid;
+    grid: 1fr 1fr 0.3fr / 1fr 16rem;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: all .5s ease-in-out;
+}
+
+.section-content .section-projects {
+    grid-area: 1 / 1 / 3 / 2;
+    margin: 1rem;
+}
+
+.section-content .section-projects .section-content-holder {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+}
+
+.section-content .section-projects .section-content-card {
+    background-color: var(--background-white);
+    border-radius: 0.4rem;
+    box-shadow: 0.1rem 0.3em 0.3rem rgb(0, 0, 0, 0.05);
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    transition: all 0.5s ease-in-out;
+    display: grid;
+    grid: 1fr 1.5rem / 40% 60%;
+    gap: 0.9rem 0.5rem;
+    position: relative;
+}
+
+.section-content .section-projects .section-content-card::before
+{
+    border-left: 0.45rem solid #132544;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0.55rem;
+    border-radius: 0.4rem;
+}
+
+.section-content .section-projects .section-content-card-image img
+{
+    width: 95%;
+    border-radius: 0.4rem;
+}
+
+.section-content .section-projects .section-content-card-icons
+{
+    grid-area: 2 / 1 / 3 / 3;
+    justify-self: end;
+}
+
+.section-content .section-projects .section-content-card-icons img
+{
+    width: 22px;
+    height: 22px;
+    opacity: 0.8;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.section-content .section-projects .section-content-card-icons img:hover
+{   
+    opacity: 1;
+    transform: scale(1.3);
+}
+
+.section-content .section-extra {
+    grid-area: 1 / 2 / 3 / 3;
+    margin: 1rem;
+}
+
+.section-content .section-content-box-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    padding-left: 0.3rem;
+}
+
+.section-content .section-content-box {
+    background-color: var(--background-white);
+    border-radius: 0.4rem;
+    box-shadow: 0.1rem 0.3em 0.3rem rgb(0, 0, 0, 0.05);
+    padding: 0.6rem 1.3rem;
+    font-size: 0.85rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.section-content .section-trending .section-content-box {
+    display: grid;
+    grid: 1fr 1fr 1fr 1fr / 40px 1fr;
+    gap: 1rem 0.5rem;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+}
+
+.section-content .section-content-box a, .section-content .section-projects .section-content-card a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.section-content .section-content-box a:hover, .section-content .section-projects .section-content-card a:hover {
+    color: var(--text-a-hover-color);
+    text-decoration: none;
+}
+
+.section-content .section-trending .section-trending-image img {
+    display: inline;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+.section-content .section-trending .section-trending-user span, .section-content .section-announcements span,
+.section-content .section-content-card-desc span {
+    color: var(--text-span-color);
+}
+
+.section-content .section-events {
+    grid-area: 3 / 1 / 4 / 3;
+    margin: 1rem;
+    position: relative;
+    justify-self: center;
+    width: 60%;
+    text-align: center;
+}
+
+.section-content .section-events .section-events-today {
+    position: absolute;
+    background-color: var(--background-white);
+    border-radius: 0.4rem;
+    box-shadow: 0.1rem 0.3em 0.3rem rgb(0, 0, 0, 0.05);
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    transition: all 0.5s ease-in-out;
+    right: 0;
+    top: 1rem;
+}
+
+.section-content .section-events .calendar-holder {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(2.2rem, 1fr));
+    justify-content: center;
+    padding-top: 1rem;
+    column-gap: 1rem;
+}
+
+.section-content .section-events .date {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.6rem 0.5rem;
+}
+
+.section-content .section-events .date + .selected {
+    background-color: #132544;
+    border-radius: 1.5rem;
+    color: white;
+}
+
+.section-footer {
+    grid-area: 4 / 2 / 5 / 3;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.notification-box {
+    display: none;
+    grid-template-rows: repeat(6, 1fr);
+    position: absolute;
+    top: 4.5rem;
+    right: -25rem;
+    background-color: var(--background-white);
+    color: var(--text-color);
+    font-size: 0.8rem;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    /*width: 1px;*/
+    max-width: 80%;
+    padding-left: 1.3rem;
+    transition: all 0.7s ease-in-out;
+    box-shadow: -0.2rem 0.3em 0.6rem rgb(0, 0, 0, 0.1);
+}
+
+.notification-box .notification {
+    display:flex;
+    align-content: center;
+    border-bottom: 0.5px solid rgb(0, 0, 0, 0.5);
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-right: 2.5rem;
+    margin-right: 1.5rem;
+}
+
+.notification-box .notification:nth-last-child(2) {
+    border-bottom: 0;
+}
+
+.notification-box .notification-text {
+    padding-left: 0.5rem;
+    padding-top: 0.3rem;
+}
+
+.notification-box .exit-notification {
+    position: inherit;
+    right: 0.4rem;
+    top: 0.3rem;
+}
+
+.notification-box .exit-notification img {
+    height: 0.9rem;
+    width: 0.9rem;
+}
+
+.notification-box .notification-icon img {
+    height: 1.2rem;
+    width: 1.2rem;
+}
+
+.media-menu-button {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #1d2636;
+    border-radius: 50%;
+    padding: 1rem;
+    margin: 0.5rem;
+    z-index: 3;
+}
+
+.media-menu {
+    position: absolute;
+    bottom: -25rem;
+    display: none;
+    left: 0;
+    background-color: #1d2636;
+    color: #fafcff;
+    padding-bottom: 3rem;
+    border-top-right-radius: 0.5rem;
+    transition: all 1s ease-in-out;
+    z-index: 1;
+}
+
+.media-menu ul li {
+    padding-right: 2.5rem;
+}
+
+/* Layout fixes */
+@media screen and (max-width: 550px) {
+    .menu, .empty-space, .section-header .profile-picture {
+        display: none;
+    }
+
+    .content {
+        grid: 3.5rem 9.5rem 1fr 2.5rem / 1fr;
+    }
+
+    .media-menu-button {
+        display: block;
+    }
+
+    .section-header {
+        grid-area: 1 / 1 / 2 / 2;
+        grid-template-columns: 60% repeat(3, 2.5rem);
+    }
+
+    .section-user {
+        grid-area: 2 / 1 / 3 / 2;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+    }
+
+    .section-user .user-container {
+        padding-top: 1rem;
+        width: 75%;
+    }
+
+    .section-user .user-menus {
+        width: 75%;
+    }
+
+    .section-content {
+        grid-area: 3 / 1 / 4 / 2;        
+        grid: 2fr 1fr 0.3fr / 1fr;
+    }
+
+    .section-content .section-projects {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .section-content .section-events {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .section-content .section-extra {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .section-footer {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+
+    .section-content .section-events .section-events-today {
+        right: -5rem;
+        top: 0.8rem;
+    }
+
+    .section-header .search-input {
+        padding-right: 0.5rem;
+        margin-right: 4rem;
+        padding-left: 0;
+    }
+
+    .section-header .search-input input {
+        padding-right: 2rem;
+        padding-left: 0.5rem;
+    }
+
+    .section-header .search-input img {
+        right: -1.5rem;
+    }
+}
